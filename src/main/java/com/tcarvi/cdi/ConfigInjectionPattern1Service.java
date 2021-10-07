@@ -2,8 +2,6 @@ package com.tcarvi.cdi;
 
 import javax.enterprise.context.ApplicationScoped;
 
-import com.tcarvi.cdi.assyncronous.AssyncronousThreadRun;
-
 // import org.jboss.logging.Logger;
 
 /**
