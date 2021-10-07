@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Implementação de cdi, para modelo de uso de Quarkus</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma"   content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Padronização para design de browsers -->
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <!-- Design da página -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+<div id="container">
+<h2>Padrões usados neste projeto:</h2>
+<p>Microprofile em <a href="https://projects.eclipse.org/projects/technology.microprofile" target="_blank"><i>projects.eclipse.org</i></a></p>
+<p>Microprofile 3.3 em <a href="https://projects.eclipse.org/projects/technology.microprofile/releases/microprofile-3.3" target="_blank"><i>projects.eclipse.org</i></a></p>
+<p>Microprofile 3.3 em <a href="https://github.com/eclipse/microprofile/tree/3.3" target="_blank"><i>github.com/eclipse</i></a></p>
+<p>Framework <a href="http://quarkus.io/" target="_blank">Quarkus</a></p>
+<h2>Especificação implementada neste projeto:</h2>
+<p>Especificação <a href="https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html">JSR 365: Contexts and Dependency Injection for Java 2.0</a></p>
+<h2><i>Endpoints:</i></h2>
+<ul>
+<li><a href="applicationName/endpointForConfigInjectionPattern1" target="_blank" >applicationName/endpointForConfigInjectionPattern1</a></li>
+<li><a href="applicationName/endpointForConfigInjectionPattern2" target="_blank" >applicationName/endpointForConfigInclusionPattern2</a></li>
+</ul>
+<h2>Design deste projeto</h2>
+<h3>Padrão Resources vs Services</h3>
+<p>Classes que executam processos administrativos de inicialização ou de configurações, possuem o sufixo Resource.</p>
+<p>Já as classes que apresentam dados solicitados pelo processamento da API possuem o sufixo Service.</p>
+<p>Normalmente informações mais negociais encontram-se nas classes de padrão Service. Estas classes são injetadas no resource.</p>
+<p>Desenvolvedor deve pensar no fluxo de vida dos beans e indicar o escopo de sua permanência na memória RAM. Singleton, ApplicationScoped, SessionScoped, RequestScoped or DependentScoped.</p>
+</div>
+</body>
+
+</html>

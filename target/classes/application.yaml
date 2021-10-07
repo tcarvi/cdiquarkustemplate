@@ -1,0 +1,41 @@
+# des profile
+"%des":
+  injected:
+    value: InjectedValue des
+  included:
+    value: Includedvalue des
+
+# hml profile
+"%testing":
+  injected:
+    value: InjectedValue testing
+  included:
+    value: Includedvalue testing
+
+# hml profile
+"%hml":
+  injected:
+    value: InjectedValue hml
+  included:
+    value: Includedvalue hml
+
+# prd profile
+"%prod":
+  injected:
+    value: InjectedValue prd
+  included:
+    value: Includedvalue prd
+
+# Default Values
+
+injected:
+  value: InjectedValue Default
+
+included:
+  value: Includedvalue Default
+
+quarkus:
+  package:
+    output-name: configquarkustemplate
+  ssl:
+    native: true
